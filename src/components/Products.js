@@ -1,13 +1,24 @@
 import React from "react";
+import Product from "./Product";
 
 const Products = (props) =>{
 
-    const {product} = props;
+    const {products} = props;
+
+    const viewProducts = () =>{
+        return(
+            <>
+                {products?.map( (product) => (
+                    <Product name={product.name} image={product.image} price={product.price} description={product.description} />
+                ))}
+            </>
+        )
+    }
 
     return (
         <>
-        {console.log(product)}
-            <h1>{product.nombre}</h1>
+        {console.log(products)}
+            {viewProducts()}
         </>
     )
 }
