@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/Category.css'
-import {Card, CardActionArea, CardContent, CardMedia, Typography} from "@mui/material";
+import {Card, Col} from "react-bootstrap";
 
 
 const Category = (props) => {
@@ -9,21 +9,20 @@ const Category = (props) => {
 
     return (
         <>
-            <Card sx={{ maxWidth: 345 }} class='category'>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={image}
-                        alt={name}
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            {name}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
+            <Col class='category'>
+                <Card>
+                    <Card.Img variant="top" src={image} class='foto'/>
+                    <Card.Body>
+                        <Card.Title>{name}</Card.Title>
+                        <Card.Text>
+                            aca va una description?
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <small className="text-muted">{name}</small>
+                    </Card.Footer>
+                </Card>
+            </Col>
         </>
     );
 }

@@ -1,3 +1,11 @@
 .category{
-    display: inline-block;
+   text-align: center;
+    margin-top: 3%;
+    border-style: double;
+    border-color: #e9c1ff;
+}
+
+.foto{
+    height: 250px;
+    object-fit: cover;
 }
