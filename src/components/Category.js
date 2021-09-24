@@ -5,12 +5,12 @@ import {Card, Col} from "react-bootstrap";
 
 const Category = (props) => {
 
-    const {name, image} = props
+    const {name, image, func} = props
 
     return (
         <>
             <Col class='category'>
-                <Card>
+                <Card onClick={func}>
                     <Card.Img variant="top" src={image} class='foto'/>
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>

@@ -30,7 +30,7 @@ const alfajores = [
         'name': 'Alfajor de mani Marroc',
         'image': alfajor_mani_marroc,
         'price': 0,
-        'description': 'ESto es un alfajor hecho con mani marroc'
+        'description': 'Esto es un alfajor hecho con mani marroc'
     }
 ]
 

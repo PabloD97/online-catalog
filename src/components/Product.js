@@ -7,7 +7,7 @@ const Product = (props) => {
 
     return(
         <>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ maxWidth: 345 , marginLeft:'2%'}}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
@@ -20,7 +20,7 @@ const Product = (props) => {
                             {name}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            {description}
+                            {description} {price}
                         </Typography>
                     </CardContent>
                 </CardActionArea>

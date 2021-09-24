@@ -2,7 +2,7 @@ import React from "react";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Home from "../components/Home.js"
 import Products from "../components/Products.js"
-import { alfajores, masas, tartas, postres } from "../storage/index.js";
+import {alfajores, masas, tartas, postres, tortas} from "../storage/index.js";
 
 const Routes = () => {
 
@@ -11,19 +11,11 @@ const Routes = () => {
             <BrowserRouter>
                 <Switch>
                     <Route path="/inicio" component= {Home}/>
-                    <Route path="/alfajores" > 
-                        <Products product = {alfajores}/> 
-                    </Route>
-                    <Route path="/postres"> 
-                        <Products product = {postres}/> 
-                    </Route>
-                    
-                    <Route path="/tartas"> 
-                        <Products product = {tartas}/> 
-                    </Route>
-                    <Route path="/masas"> 
-                        <Products product = {masas}/> 
-                    </Route>
+                    <Route path="/alfajores" component={() => (<Products products={alfajores}/>) }/>
+                    <Route path="/postres" component={() => (<Products products={postres}/>) }/>
+                    <Route path="/tartas" component={() => (<Products products={tartas}/>) }/>
+                    <Route path="/masas" component={() => (<Products products={masas}/>) }/>
+                    <Route path="/tortas" component={() => (<Products products={tortas}/>) }/>
                     <Route path="/" component= {Home}/>
                 </Switch>
             </BrowserRouter>

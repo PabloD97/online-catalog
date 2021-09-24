@@ -1,12 +1,12 @@
 .colores{
-    background-color: lightpink;
-    text-align: center;
+    background-color: #fc9daa;
 }
 
 .logo{
+    margin-left: 1%;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
-    width: 20%;
+    width: 15%;
     border-radius:50%;
     border-color: pink;
     border-style: solid;
